@@ -4,6 +4,7 @@
 
 $bg-ColorHeader: #2f5a96;
 $colorTextHeader: #f2e3bc;
+$colorService: #7d1d3f;
 $fontHeader: "Wendy One", sans-serif;
 $fontTextMain: "Roboto", sans-serif;
 $colorh1: rgb(6, 6, 100);
@@ -96,13 +97,64 @@ header {
     font-family: $fontTextMain;
     padding-bottom: 30px;
   }
-}
+  .clip-img-1 {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+    border-radius: 50%;
+    border: 2px solid #2f5a96;
+    box-shadow: 0px 0px 15px 8px rgba(213, 212, 114, 0.6);
+  }
 
-.clip-img-1 {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
-  border-radius: 50%;
-  border: 2px solid #2f5a96;
-  box-shadow: 0px 0px 15px 8px rgba(213, 212, 114, 0.6);
+  .grid-service {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10%;
+
+    > div {
+      border-radius: 15px;
+      height: 200px;
+      background-color: aliceblue;
+      border: 1px solid black;
+      overflow: hidden;
+    }
+    .photo- {
+      display: flex;
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      font-family: $fontHeader;
+      font-size: 26px;
+      color: $colorService;
+      text-shadow: 3px 2px 7px rgb(247, 246, 237);
+    }
+    .photo-buy {
+      @extend .photo-;
+      background-image: url(https://cdn.pixabay.com/photo/2016/10/10/22/37/credit-card-1730085_1280.jpg);
+    }
+    .photo-rent {
+      @extend .photo-;
+      background-image: url(https://cdn.pixabay.com/photo/2017/05/18/11/04/key-2323278_1280.jpg);
+    }
+    .photo-sell {
+      @extend .photo-;
+      background-image: url(https://cdn.pixabay.com/photo/2021/02/14/19/51/handshake-6015639_1280.jpg);
+    }
+    .photo-kensington {
+      @extend .photo-;
+      background-image: url(https://cdn.pixabay.com/photo/2014/09/25/00/58/bird-459850_1280.jpg);
+    }
+    .photo-chelsea {
+      @extend .photo-;
+      background-image: url(https://cdn.pixabay.com/photo/2016/08/30/05/54/new-york-1629872_1280.jpg);
+    }
+    .photo-shoreditch {
+      @extend .photo-;
+      background-image: url(https://cdn.pixabay.com/photo/2018/03/26/08/47/architecture-3261954_1280.jpg);
+    }
+  }
 }
