@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Wendy+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 $bg-ColorHeader: #2f5a96;
 $colorTextHeader: #f2e3bc;
 $fontHeader: "Wendy One", sans-serif;
-
+$fontTextMain: "Roboto", sans-serif;
+$colorh1: rgb(6, 6, 100);
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +14,7 @@ $fontHeader: "Wendy One", sans-serif;
 }
 
 body {
-  background-color: white;
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/09/apartments-1845884_1280.jpg);
   min-height: 200vh;
 }
 
@@ -64,5 +67,42 @@ header {
 }
 
 .main {
-  margin-top: 100px;
+  background-color: rgb(247, 244, 225);
+  width: 70%;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 85px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: "Carter One", cursive;
+    color: $colorh1;
+    text-shadow: 2px 3px rgb(248, 237, 159);
+  }
+
+  h2 {
+    padding-bottom: 20px;
+    font-family: "Carter One", cursive;
+    color: $colorh1;
+    text-shadow: 2px 3px rgb(248, 237, 159);
+  }
+
+  p {
+    margin: 0 auto;
+    width: 70%;
+    font-family: $fontTextMain;
+    padding-bottom: 30px;
+  }
+}
+
+.clip-img-1 {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  border-radius: 50%;
+  border: 2px solid #2f5a96;
+  box-shadow: 0px 0px 15px 8px rgba(213, 212, 114, 0.6);
 }
