@@ -2,15 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 
 $bg-ColorHeader: #2f5a96;
 $bg-ColorMain: rgb(247, 244, 225);
 $bg-ColorFooter: #0e103d;
 $colorTextHeader: #f2e3bc;
 $colorService: #7d1d3f;
+$colorPagesTitle: rgb(32, 86, 56);
 $fontHeader: "Wendy One", sans-serif;
 $fontTextMain: "Roboto", sans-serif;
 $fontGridPhotos: "Creepster", cursive;
+$fontAttractionsTitle: "Original Surfer", cursive;
 $colorh1: rgb(6, 6, 100);
 
 * {
@@ -169,6 +172,9 @@ header {
     margin-top: 80px;
     padding-bottom: 80px;
   }
+  .pageopen > h1 {
+    color: $colorPagesTitle;
+  }
 }
 
 footer {
@@ -196,5 +202,72 @@ footer {
 
   address {
     font-size: 12px;
+  }
+}
+
+/* kensington */
+
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+.place-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  padding-bottom: 20px;
+
+  > img {
+    width: 600px;
+    height: 300px;
+  }
+}
+.title-attractions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#attractions {
+  width: 95%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: center;
+
+  > div {
+    width: 33%;
+    padding: 5px;
+
+    h3 {
+      font-family: $fontAttractionsTitle;
+      padding-bottom: 0;
+      margin-bottom: 10px;
+      text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+    img {
+      width: 180px;
+      height: 120px;
+      border: 2px solid $bg-ColorHeader;
+      margin-bottom: 20px;
+    }
+
+    > iframe {
+      width: 80%;
+    }
   }
 }

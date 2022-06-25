@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -143,6 +144,9 @@ header ul li a {
   margin-top: 80px;
   padding-bottom: 80px;
 }
+.main .pageopen > h1 {
+  color: rgb(32, 86, 56);
+}
 
 footer {
   display: flex;
@@ -167,4 +171,65 @@ footer h3 {
 }
 footer address {
   font-size: 12px;
+}
+
+/* kensington */
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.history h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.place-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.place-map > img {
+  width: 600px;
+  height: 300px;
+}
+
+.title-attractions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#attractions {
+  width: 95%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+#attractions > div {
+  width: 33%;
+  padding: 5px;
+}
+#attractions > div h3 {
+  font-family: "Original Surfer", cursive;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+#attractions > div p {
+  margin-bottom: 0;
+}
+#attractions > div img {
+  width: 180px;
+  height: 120px;
+  border: 2px solid #2f5a96;
+  margin-bottom: 20px;
+}
+#attractions > div > iframe {
+  width: 80%;
 }/*# sourceMappingURL=style.css.map */
