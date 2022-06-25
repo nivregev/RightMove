@@ -236,4 +236,28 @@ footer address {
 }
 #attractions > div .img-att {
   width: 95%;
+}
+
+/* form */
+form {
+  display: flex;
+  justify-content: center;
+}
+form > div {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+form > div > div {
+  margin: 10px;
+}
+
+main .form .title-service {
+  padding-bottom: 10px;
+}
+
+main .form-img img {
+  width: 100%;
+  height: 135px;
 }/*# sourceMappingURL=style.css.map */

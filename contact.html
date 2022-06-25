@@ -25,20 +25,118 @@
     </header>
     <main class="main">
       <div class="pageopen">
-        <h1>Contact Us</h1>
+        <h1>Contact Us !</h1>
         <p>
-          <h3> want to buy/rent your happy new place?</h3><br />
+          <h3> want to buy/rent/sell your happy new place?</h3><br />
           please fill the form down billow and one of our agent will contact you
           back <b> with in 24 hours</b>
         </p>
       </div>
-      <div>
+      <div class="form">
         <form action="">
+            <div class="client-info">
+                <h2 class="title-service">client information</h2>
+                <div>
+                    <label for="title">title:</label>
 
+                    <label for="Mr.">Mr.</label>
+                    <input type="radio"  id="Mr." name="title" value="Mr.">
 
+                    <label for="Mrs.">Mrs.</label>
+                    <input type="radio" id="Mrs." name="title" value="Mrs.">
 
-            
+                    <label for="Other.">Other.</label>
+                    <input type="radio" id="Other" name="title" value="Other">
+                </div>
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="">
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="">
+                </div>
+                <div>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="E-Mail address">
+                </div>
+                <div>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="(123)-456-7890" max="">
+                </div>
+                
+         
+            </div>
+            <div class="service-info">
+                <h2 class="title-service">service information</h2>
+                <div>
+                    <label for="service"></label>
+
+                    <label for="Buy">Buy</label>
+                    <input type="radio" id="Buy" name="service" value="Buy">
+
+                    <label for="Rent">Rent</label>
+                    <input type="radio" id="Rent" name="service" value="Rent">
+
+                    <label for="Sell">Sell</label>
+                    <input type="radio" id="Sell" name="service" value="Sell">
+                </div>
+                <div>
+                    <label for="Area"></label>
+                    
+                    <label for="Kensington">Kensington</label>
+                    <input type="radio" id="Kensington" name="Area" value="Kensington" >
+
+                    <label for="Chelsea">Chelsea</label>
+                    <input type="radio" id="Chelsea" name="Area" value="Chelsea" >
+
+                    <label for="Shoreditch">Shoreditch</label>
+                    <input type="radio" id="Shoreditch" name="Area" value="Shoreditch" >
+                </div>
+                <div>
+                    <label for="bedrooms">Number Of Bedrooms:</label>
+                    <select name="bedrooms" id="bedrooms">
+                        <option value="Studio">Studio</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Min-Price">Rent Min-Price:</label>
+                    <select name="Min-Price" id="Min-Price" aria-placeholder="$">
+                        <option value="100$" >100$</option>
+                        <option value="500$">500$</option>
+                        <option value="1000$">1000$</option>
+                        <option value="1500$">1500$</option>
+                        <option value="2000$">2000$</option>
+                        <option value="2500$">2500$</option>
+                        <option value="3000$">3000$</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Max-Price">Rent Max-Price:</label>
+                    <select name="Max-Price" id="Max-Price">
+                        <option value="500$">500$</option>
+                        <option value="1000$">1000$</option>
+                        <option value="1500$">1500$</option>
+                        <option value="2000$">2000$</option>
+                        <option value="2500$">2500$</option>
+                        <option value="3000$">3000$</option>
+                        <option value="3500+$">3500+$</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Pat-Friendly">Pat-Friendly:</label>
+                    <input type="checkbox" id="Pat-Friendly" name="Pat-Friendly">
+                </div>
+            </div>
         </form>
+      </div>
+      <div class="form-img">
+            <img src="https://cdn.pixabay.com/photo/2014/04/03/11/08/london-311833_1280.png" alt="">
       </div>
     </main>
     <footer class="footer">
