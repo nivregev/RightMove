@@ -234,6 +234,6 @@ footer address {
   border: 2px solid #2f5a96;
   margin-bottom: 20px;
 }
-#attractions > div > iframe {
-  width: 80%;
+#attractions > div .img-att {
+  width: 95%;
 }/*# sourceMappingURL=style.css.map */
