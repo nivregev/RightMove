@@ -147,6 +147,10 @@ header ul li a {
 .main .pageopen > h1 {
   color: rgb(32, 86, 56);
 }
+.main .pageopen h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
 
 footer {
   display: flex;

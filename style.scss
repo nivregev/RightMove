@@ -172,8 +172,14 @@ header {
     margin-top: 80px;
     padding-bottom: 80px;
   }
-  .pageopen > h1 {
-    color: $colorPagesTitle;
+  .pageopen {
+    > h1 {
+      color: $colorPagesTitle;
+    }
+    h3 {
+      font-family: $fontTextMain;
+      font-size: 20px;
+    }
   }
 }
 
